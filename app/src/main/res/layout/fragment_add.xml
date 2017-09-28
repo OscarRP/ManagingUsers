@@ -1,0 +1,106 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.misapps.oscarruiz.managingusers.fragments.AddFragment"
+    android:layout_margin="20dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_marginTop="30dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_edit_text"
+            android:hint="@string/name"
+            android:maxLines="1"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="20dp"
+        android:weightSum="100">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/birthdate"
+            android:maxLines="1"
+            android:inputType="date"
+            android:layout_weight="100">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/birthdate_edit_text"
+                android:hint="@string/birthdate"/>
+        </android.support.design.widget.TextInputLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_date_button"
+            android:background="@mipmap/select_date_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_layout"
+        android:layout_weight="100"
+        android:layout_marginTop="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/birth_time"
+            android:layout_weight="100">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/birth_time_edit_text"
+                android:maxLines="1"
+                android:inputType="datetime"
+                android:hint="@string/birthtime"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_time_button"
+            android:background="@mipmap/select_time_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/detailButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/accept_button"
+            android:text="@string/accept"
+            android:layout_marginStart="30dp"
+            style="@style/detailButton"/>
+    </LinearLayout>
+</RelativeLayout>

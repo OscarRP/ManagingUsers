@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Managing Users</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Drawer Title -->
+    <string name="managing">Managing</string>
+    <string name="users">Users</string>
+
+    <!-- Drawer Options -->
+    <string name="user_list">Listado de Usuarios</string>
+    <string name="add_user">Añadir Usuario</string>
+    <string name="delete_user">Eliminar Usuario</string>
+
+    <!-- Home Fragment -->
+    <string name="empty_list">No se han encontrado usuarios</string>
+    <string name="error_loading_users">Error al cargar los usuarios</string>
+    <string name="user_deleted">Usuario eliminado correctamente</string>
+    <string name="error_deleting">Error al eliminar el usuario</string>
+    <string name="search">Buscar usuario</string>
+    <string name="undo_editing">Deshacer</string>
+    <string name="changes_undo">Se han deshecho los cambios</string>
+    <string name="undo_error">No se han podido deshacer los cambios</string>
+
+    <!-- Swipe Menu -->
+    <string name="edit">Editar</string>
+
+    <!-- Detail Fragment -->
+    <string name="id">Id</string>
+    <string name="name">Nombre</string>
+    <string name="birthdate">Fecha Nacimiento</string>
+    <string name="user_detail">Detalle de Usuario</string>
+
+    <!-- Add Fragment -->
+    <string name="create_user">CREAR NUEVO USUARIO</string>
+    <string name="birthtime">Hora de Nacimiento</string>
+    <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
+    <string name="fill_all_fields">Debes rellenar todos los campos</string>
+    <string name="user_created">Usuario guardado correctamente</string>
+    <string name="user_creation_error">Error al guardar el usuario</string>
+    <string name="edit_user">Editar Usuario</string>
+</resources>
